@@ -6,7 +6,6 @@
   font-display: swap;
   src: url(../fonts/Gilroy-Regular.woff), url(../fonts/Gilroy-Regular.woff2);
 }
-
 @font-face {
   font-family: Gilroy;
   font-weight: 600;
