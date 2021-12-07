@@ -1,0 +1,49 @@
+p {
+  color: blue;
+}
+@font-face {
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../font/Gilroy-Regular.woff), url(../font/Gilroy-Regular.woff2);
+}
+@font-face {
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../font/Gilroy-SemiboldItalic.woff),
+    url(../font/Gilroy-SemiboldItalic.woff2);
+}
+:root {
+  --main-bg-color: #191919;
+  --primary-color-text: rgba(255, 255, 255, 0.8);
+  --title-color-text: #e7e7e7;
+  --second-color-text: rgba(255, 255, 255, 0.3);
+  --primary-btn-color-text: rgba(255, 255, 255, 0.9);
+  --accent-color: #b5302d;
+}
+body {
+  background-color: var(--main-bg-color);
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+.btn {
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  background-color: var(--main-bg-color);
+  border: 1px solid var(--accent-color);
+  color: var(--title-color-text);
+}
+.btn-accent:hover,
+.btn-accent:focus {
+  color: var(--accent-color);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
