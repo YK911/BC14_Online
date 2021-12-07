@@ -1,0 +1,73 @@
+
+/*FONTS*/
+@font-face{
+    font-family: 'Gilroy regular', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/Gilroy-Regular.woff), url(../fonts/Gilroy-Regular.woff2);
+}
+@font-face {
+    font-family: 'Gilroy semibold', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(../fonts/Gilroy-Semibold.woff), 
+    url(../fonts/Gilroy-Semibold.woff2);
+}
+
+:root{
+    --main-bg-cl: #191919;
+    --primary-color-text: rgba(255, 255, 255, 0.8);
+    --title-color-text: #E7E7E7;
+    --second-color-text:rgba(255, 255, 255, 0.3);
+    --primary-btn-color-text:rgba(255, 255, 255, 0.9);
+
+}
+body {
+    background-color: var(--main-bg-cl);
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.45;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul{
+    margin: 0;
+}
+
+.title{
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--title-color-text);
+}
+
+.btn{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--primary-btn-color-text);
+    background-color: #DF3D3A;
+    border: none;
+}
+
+.btn-accent{
+    color: var(--primary-btn-color-text);
+    background-color: transparent;
+    border: 1px solid #DF3D3A;
+}
