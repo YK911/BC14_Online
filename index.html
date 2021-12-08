@@ -17,33 +17,33 @@
 
   <body>
     <!-- section header -->
-    <header>
+    <header class="header">
       <a href="" aria-label="Логотип Bose">
         <img src="./img/bose-logo.svg" alt="Логотип Компании" />
       </a>
-      <nav>
-        <ul>
-          <li>
-            <a href="">Характеристики</a>
+      <nav class="header-nav">
+        <ul class="header-list">
+          <li class="header-item">
+            <a class="header-item-link"  href="">Характеристики</a>
           </li>
-          <li>
-            <a href="">История</a>
+          <li class="header-item">
+            <a class="header-item-link" href="">История</a>
           </li>
-          <li>
-            <a href="">Отзывы</a>
+          <li class="header-item">
+            <a class="header-item-link" href="">Отзывы</a>
           </li>
-          <li>
-            <a href="">Оплата и доставка</a>
+          <li class="header-item">
+            <a class="header-item-link" href="">Оплата и доставка</a>  
           </li>
         </ul>
       </nav>
     </header>
     <main>
       <!-- section hero -->
-      <section>
-        <p>Наушники с шумоподавлением, которые способны на многое</p>
-        <p>До 20 часов воспроизведения</p>
-        <h1>Наушники Bose NC 700</h1>
+      <section class="hero">
+        <p class="hero-description">Наушники с шумоподавлением, которые способны на многое</p>
+        <p class="hero-description">До 20 часов воспроизведения</p>
+        <h1 class="hero-title">Наушники Bose NC 700</h1>
         <button class="btn" type="button">Заказать</button>
         <img
           src="./img/hero/img.png"
@@ -64,7 +64,7 @@
         <h2 class="title">Премиальный дизайн и комфорт</h2>
         <ul class="design-list">
           <li class="design-item">
-            <h3 class="design-subtitle">11 уровней шумоподавления</h3>
+            <h3 class="subtitle">11 уровней шумоподавления</h3>
             <p class="design-text">
               С новыми наушниками Bose Noise Cancelling Headphone 700 можно
               плавно увеличить или уменьшить уровень шумоподавления. Вас слышно
@@ -107,7 +107,7 @@
         />
         <ul>
           <li>
-            <h3>Максимальное наслаждение</h3>
+            <h3 class="subtitle">Максимальное наслаждение</h3>
             <p>
               Для того чтобы создать комфортную атмосферу — поднимайте уровень
               за уровнем от "прозрачного" режима до максимального блокирования
@@ -116,7 +116,7 @@
             </p>
           </li>
           <li>
-            <h3>Хрустальный звук</h3>
+            <h3 class="subtitle">Хрустальный звук</h3>
             <p>
               Система динамиков и фирменный активный эквалайзер способны
               обеспечить качественный и мощный звук на любом уровне громкости.
@@ -129,7 +129,7 @@
       <!-- section features -->
       <section>
         <h2 class="title">Bose AR</h2>
-        <h3>Фирменная технология</h3>
+        <h3 class="subtitle">Фирменная технология</h3>
         <p>
           Bose AR — это уникальная аудиоплатформа дополненной реальности, что
           открывает перед вами новые грани звучания. Она позволяет вам
@@ -144,18 +144,18 @@
         />
       </section>
       <!-- section warranty -->
-      <section>
+      <section class="garanties">
         <h2 class="title">Гарантии</h2>
         <ul>
           <li>
-            <h3>Гарантия возврата денег в течение 90 дней</h3>
+            <h3 class="subtitle">Гарантия возврата денег в течение 90 дней</h3>
             <p>
               Если вы не удовлетворены продуктом на 100% вы можете вернуть его
               обратно и получить полный возврат денег
             </p>
           </li>
           <li>
-            <h3>1 год гарантии</h3>
+            <h3 class="subtitle">1 год гарантии</h3>
             <p>
               Вне зависимости от страны вашего проживания, если ваши наушники
               сломались, мы вышлем вам новые
@@ -201,18 +201,18 @@
           height="355"
         />
         <blockquote>
-          <p>
+          <p class="subtitle">
             Никогда не переставайте мечтать. Всегда мечтайте о лучшем, и думайте
             о том, как этого достичь.
           </p>
-          <p>Основатель компании Амар Боуз</p>
+          <p class="quote-author">Основатель компании Амар Боуз</p>
         </blockquote>
       </section>
       <!-- section overview -->
-      <section>
+      <section class="overview">
         <h2 class="title">Обзоры</h2>
-        <h3>Bose Сorporation</h3>
-        <p>
+        <h3 class="overview-subtitle subtitle">Bose Сorporation</h3>
+        <p class="">
           Critically acclaimed for their powerful noise cancelling, astonishing
           sound, and unrivaled voice pickup, Bose Noise Cancelling Headphones
           700 help turn any space into the perfect place to listen to music, get
@@ -225,17 +225,17 @@
           height="590"
         ></video>
         <ul>
-          <li>01</li>
-          <li>02</li>
-          <li>03</li>
-          <li>04</li>
+          <li class="overview-numbers current">01</li>
+          <li class="overview-numbers">02</li>
+          <li class="overview-numbers">03</li>
+          <li class="overview-numbers">04</li>
         </ul>
       </section>
       <!-- section faq -->
       <section>
         <h2 class="title">FAQ</h2>
         <details>
-          <summary>
+          <summary class="subtitle">
             <span>Как выполнить сопряжение с мобильным устройством?</span>
             <span>?</span>
           </summary>
@@ -252,7 +252,7 @@
           </p>
         </details>
         <details>
-          <summary>
+          <summary class="subtitle">
             <span>Каков диапазон беспроводной связи у Bose NC 700?</span>
             <span>?</span>
           </summary>
@@ -269,7 +269,7 @@
           </p>
         </details>
         <details>
-          <summary>
+          <summary class="subtitle">
             <span>Каков диапазон беспроводной связи у Bose NC 700?</span>
             <span>?</span>
           </summary>
@@ -286,7 +286,7 @@
           </p>
         </details>
         <details>
-          <summary>
+          <summary class="subtitle">
             <span>Как сложить наушники Bose NC 700 для хранения?</span>
             <span>?</span>
           </summary>
@@ -303,7 +303,7 @@
           </p>
         </details>
         <details>
-          <summary>
+          <summary class="subtitle">
             <span>Работает ли гарантия на международном уровне?</span>
             <span>?</span>
           </summary>
@@ -352,7 +352,7 @@
       <!-- section feedback -->
       <section class="feedback">
         <h2 class="title">Обратная связь</h2>
-        <p class="feedback-text">
+        <p class="feedback-text subtitle">
           Мы поможем подобрать вам подходящие наушники
         </p>
         <form class="feedback-form">
@@ -408,7 +408,7 @@
           <a class="footer-link" href="">История</a>
         </li>
         <li class="footer-item">
-          <a class="footer__link" href="">Отзывы</a>
+          <a class="footer-link" href="">Отзывы</a>
         </li>
         <li class="footer-item">
           <a class="footer-link" href="">Оплата и доставка</a>

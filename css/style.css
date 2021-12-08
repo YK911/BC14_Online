@@ -15,7 +15,7 @@
 }
 :root {
   /* background colors */
-  --main-bg-color: #191919;
+  --main-bg-cl: #191919;
 
   /* text colors */
 
@@ -24,6 +24,7 @@
   --second-color-text: rgba(255, 255, 255, 0.3);
   --primary-btn-color-text: rgba(255, 255, 255, 0.9);
   --primary-btn: #df3d3a;
+  --accent-text-color: #df3d3a;
 }
 /* Common styles */
 body {
@@ -77,4 +78,72 @@ ul {
   color: var(--primary-btn-color-text);
   background-color: transparent;
   border: 1px solid var(--primary-btn);
+}
+
+.subtitle {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.25;
+  color: var(--title-color-text);
+  }
+
+/* HEADER */
+
+.header-item-link {
+font-size: 16px;
+line-height: 1.19;
+color: var(--primary-color-text);
+}
+
+
+/* HERO */
+
+.hero-description {
+  font-size: 16px;
+line-height: 1.25;
+color: var(--primary-color-text);
+}
+
+.hero-title {
+font-weight: 600;
+font-size: 74px;
+line-height: 1;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+
+color: var(--title-color-text);
+}
+
+/* GARANTIES */
+
+.quote-author {
+font-size: 16px;
+line-height: 0.7;
+color: rgba(255, 255, 255, 0.4);
+}
+
+.overview-subtitle  {
+  color: var(--accent-text-color);
+}
+
+.overview-numbers {
+  font-size: 28px;
+ line-height: 1.25;
+  color: var(--accent-text-color);
+  opacity: 0.2;
+}
+
+.overview-numbers.current {
+  opacity: 1;
+}
+
+/* FOOTER */
+.footer-link {
+  font-size: 16px;
+line-height: 1.25;
+color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-link.footer-link--tel {
+color: var(--primary-color-text);
 }
