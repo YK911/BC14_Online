@@ -28,7 +28,7 @@
 }
 /* Common styles */
 body {
-  background-color: var(--main-bg-cl);
+  background-color: var(--main-bg-color);
   font-family: Gilroy;
   font-weight: 400;
   font-size: 20px;
@@ -146,4 +146,21 @@ color: rgba(255, 255, 255, 0.3);
 
 .footer-link.footer-link--tel {
 color: var(--primary-color-text);
+}
+/* header */
+header {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.19;
+  color: rgba(255, 255, 255, 0.8);
+}
+/* hero */
+.hero-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 74px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--title-color-text);
 }
