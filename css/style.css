@@ -1,17 +1,17 @@
 @font-face {
-  font-family: Gilroy;
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(../font/Gilroy-Regular.woff), url(../font/Gilroy-Regular.woff2);
+  src: url(../fonts/Gilroy-Regular.woff), url(../fonts/Gilroy-Regular.woff2);
 }
 @font-face {
-  font-family: Gilroy;
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url(../font/Gilroy-SemiboldItalic.woff),
-    url(../font/Gilroy-SemiboldItalic.woff2);
+  src: url(../fonts/Gilroy-Semibold.woff),
+    url(../fonts/Gilroy-Semibold.woff2);
 }
 :root {
   /* background colors */
