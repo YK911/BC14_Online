@@ -17,33 +17,67 @@ p {
     url(../font/Gilroy-SemiboldItalic.woff2);
 }
 :root {
+    /* background colors */
   --main-bg-color: #191919;
+
+    /* text colors */
+
   --primary-color-text: rgba(255, 255, 255, 0.8);
   --title-color-text: #e7e7e7;
   --second-color-text: rgba(255, 255, 255, 0.3);
   --primary-btn-color-text: rgba(255, 255, 255, 0.9);
-  --accent-color: #b5302d;
+  --primary-btn: #df3d3a;
 }
+/* Common styles */
 body {
-  background-color: var(--main-bg-color);
-  font-family: "Gilroy", sans-serif;
+  background-color: var(--main-bg-cl);
+  font-family: Gilroy;
   font-weight: 400;
   font-size: 20px;
+  line-height: 1.45;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+}
+/* Utils */
+.title {
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+
+  color: var(--title-color-text);
 }
 .btn {
-  font-family: "Gilroy", sans-serif;
+  font-family: Gilroy, c sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  background-color: var(--main-bg-color);
-  border: 1px solid var(--accent-color);
-  color: var(--title-color-text);
+  color: var(--primary-btn-color-text);
+  background-color: var(--primary-btn);
+  border: none;
+  cursor: pointer;
 }
-.btn-accent:hover,
-.btn-accent:focus {
-  color: var(--accent-color);
-  border: 1px solid rgba(255, 255, 255, 0.8);
+.btn-accent {
+  color: var(--primary-btn-color-text);
+  background-color: transparent;
+  border: 1px solid var(--primary-btn);
 }
