@@ -1,15 +1,12 @@
-p {
-  color: blue;
-}
 @font-face {
-  font-family: "Gilroy", sans-serif;
+  font-family: Gilroy;
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: url(../font/Gilroy-Regular.woff), url(../font/Gilroy-Regular.woff2);
 }
 @font-face {
-  font-family: "Gilroy", sans-serif;
+  font-family: Gilroy;
   font-style: normal;
   font-weight: 600;
   font-display: swap;
@@ -17,10 +14,10 @@ p {
     url(../font/Gilroy-SemiboldItalic.woff2);
 }
 :root {
-    /* background colors */
+  /* background colors */
   --main-bg-color: #191919;
 
-    /* text colors */
+  /* text colors */
 
   --primary-color-text: rgba(255, 255, 255, 0.8);
   --title-color-text: #e7e7e7;
