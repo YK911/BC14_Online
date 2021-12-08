@@ -10,8 +10,7 @@
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url(../fonts/Gilroy-Semibold.woff),
-    url(../fonts/Gilroy-Semibold.woff2);
+  src: url(../fonts/Gilroy-Semibold.woff), url(../fonts/Gilroy-Semibold.woff2);
 }
 :root {
   /* background colors */
@@ -25,6 +24,8 @@
   --primary-btn-color-text: rgba(255, 255, 255, 0.9);
   --primary-btn: #df3d3a;
   --accent-text-color: #df3d3a;
+  --hover-btn: #b5302d;
+  --hover-btn-border: rgba(255, 255, 255, 0.8);
 }
 /* Common styles */
 body {
@@ -51,15 +52,20 @@ p,
 ul {
   margin: 0;
 }
+
 /* Utils */
+.section {
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
 .title {
   font-weight: 600;
   font-size: 54px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-
   color: var(--title-color-text);
+  margin-bottom: 50px;
 }
 .btn {
   font-family: Gilroy, c sans-serif;
@@ -74,61 +80,77 @@ ul {
   border: none;
   cursor: pointer;
 }
+.btn:hover,
+.btn:focus {
+  background-color: var(--hover-btn);
+}
 .btn-accent {
   color: var(--primary-btn-color-text);
   background-color: transparent;
   border: 1px solid var(--primary-btn);
 }
-
+.btn-accent:hover,
+.btn-accent:focus {
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  color: var(--hover-btn);
+  background-color: transparent;
+}
 .subtitle {
   font-weight: 600;
   font-size: 28px;
   line-height: 1.25;
   color: var(--title-color-text);
-  }
+  margin-bottom: 20px;
+}
 
 /* HEADER */
 
 .header-item-link {
-font-size: 16px;
-line-height: 1.19;
-color: var(--primary-color-text);
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--primary-color-text);
 }
-
 
 /* HERO */
 
 .hero-description {
   font-size: 16px;
-line-height: 1.25;
-color: var(--primary-color-text);
+  line-height: 1.25;
+  color: var(--primary-color-text);
+  max-width: 320px;
+  margin-bottom: 36px;
 }
 
+.hero-description:last-of-type {
+  max-width: 135px;
+  margin-bottom: 0;
+}
 .hero-title {
-font-weight: 600;
-font-size: 74px;
-line-height: 1;
-letter-spacing: 0.02em;
-text-transform: uppercase;
-
-color: var(--title-color-text);
+  font-weight: 600;
+  font-size: 74px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--title-color-text);
+  margin-bottom: 60px;
+  width: 485px;
 }
 
 /* GARANTIES */
 
 .quote-author {
-font-size: 16px;
-line-height: 0.7;
-color: rgba(255, 255, 255, 0.4);
+  font-size: 16px;
+  line-height: 0.7;
+  color: rgba(255, 255, 255, 0.4);
 }
 
-.overview-subtitle  {
+.overview-subtitle {
   color: var(--accent-text-color);
 }
 
 .overview-numbers {
   font-size: 28px;
- line-height: 1.25;
+  line-height: 1.25;
   color: var(--accent-text-color);
   opacity: 0.2;
 }
@@ -140,12 +162,12 @@ color: rgba(255, 255, 255, 0.4);
 /* FOOTER */
 .footer-link {
   font-size: 16px;
-line-height: 1.25;
-color: rgba(255, 255, 255, 0.3);
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .footer-link.footer-link--tel {
-color: var(--primary-color-text);
+  color: var(--primary-color-text);
 }
 /* header */
 header {
@@ -154,7 +176,17 @@ header {
   line-height: 1.19;
   color: rgba(255, 255, 255, 0.8);
 }
+.header-list {
+  display: flex;
+}
+.header-item + .header-item {
+  margin-left: 77px;
+}
+
 /* hero */
+.hero {
+  padding-top: 70px;
+}
 .hero-title {
   font-style: normal;
   font-weight: 600;
@@ -163,4 +195,14 @@ header {
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: var(--title-color-text);
+}
+/* design */
+.design-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+/* faq */
+.faq .subtitle {
+  margin: 0;
+  padding-top: 4px;
+  padding-bottom: 24px;
 }
