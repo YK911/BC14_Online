@@ -28,8 +28,8 @@
 }
 /* Common styles */
 body {
-  background-color: var(--main-bg-color);
-  font-family: Gilroy;
+  background-color: var(--main-bg-cl);
+  font-family: Gilroy, sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.45;
