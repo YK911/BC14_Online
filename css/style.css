@@ -26,7 +26,10 @@
   --accent-text-color: #df3d3a;
   --hover-btn: #b5302d;
   --hover-btn-border: rgba(255, 255, 255, 0.8);
-  --number-elements: 3;
+
+  /* grid layout */
+  --indent: 40px;
+  --item: 3;
 }
 /* Common styles */
 body {
@@ -35,6 +38,7 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 1.45;
+  color: var(--primary-color-text);
 }
 ul {
   list-style: none;
@@ -114,6 +118,19 @@ ul {
   padding-left: 20px;
   padding-right: 20px;
   outline: 1px solid red;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: calc(-1 * var(--indent));
+  margin-bottom: calc(-1 * var(--indent));
+}
+
+.grid-item {
+  flex-basis: calc(100% / var(--item) + calc(-1 * var(--indent)));
+  margin-right: var(--indent);
+  margin-bottom: var(--indent);
 }
 
 /* HEADER */
@@ -228,6 +245,7 @@ header {
 
 .design {
   display: flex;
+  justify-content: space-between;
 }
 
 .design-wrapper .title {
@@ -235,7 +253,7 @@ header {
 }
 
 .design-image {
-  margin-right: 150px;
+  /* margin-right: 150px; */
 }
 
 .design-item:not(:last-child) {
@@ -249,26 +267,62 @@ header {
   padding-bottom: 24px;
 }
 
+/* BENEFITS */
+
+.benefits .container {
+  width: 1128px;
+}
+
+.benefits-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.benefits-items-list {
+  /* list-style: disc; */
+}
+
+.benefits-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  /* vertical-align: middle; */
+}
+
+.benefits-item:last-child {
+  margin-bottom: 0;
+}
+
+.benefits-item::before {
+  content: "  ";
+  margin-right: 10px;
+  display: block;
+  width: 13px;
+  height: 13px;
+  background-color: var(--accent-text-color);
+  border-radius: 50%;
+}
+
 /* == EXMP ==*/
-/* .item-exmp {
-  width: 50px;
+.item-exmp {
+  /* width: 50px; */
   height: 50px;
   background-color: tomato;
-  margin-left: 10px;
+  /* margin-left: 10px; */
 }
 
 .exmp .container {
-  display: flex;
-   justify-content: space-between;
-  align-items: center;
+  /* display: flex; */
+  /* justify-content: space-between;
+  align-items: center; */
 }
 
 .menu-exmp {
-  display: flex;
-  margin-left: 100px;
+  /* display: flex; */
+  /* margin-left: 100px; */
 }
 
-.contact {
+/* .contact {
   display: flex;
   margin-left: auto;
 }
