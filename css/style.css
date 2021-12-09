@@ -26,6 +26,7 @@
   --accent-text-color: #df3d3a;
   --hover-btn: #b5302d;
   --hover-btn-border: rgba(255, 255, 255, 0.8);
+  --number-elements: 3;
 }
 /* Common styles */
 body {
@@ -68,7 +69,11 @@ ul {
   margin-bottom: 50px;
 }
 .btn {
-  font-family: Gilroy, c sans-serif;
+  /* min-width: 290px;
+  min-height: 68px; */
+  max-width: 300px;
+  padding: 22px 95px;
+  font-family: Gilroy, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -102,17 +107,55 @@ ul {
   color: var(--title-color-text);
   margin-bottom: 20px;
 }
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  outline: 1px solid red;
+}
 
 /* HEADER */
-
+.header {
+  padding-top: 64px;
+  padding-bottom: 70px;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .header-item-link {
+  display: block;
+  padding-top: 8px;
+  padding-bottom: 8px;
   font-size: 16px;
   line-height: 1.19;
   color: var(--primary-color-text);
 }
+/* header */
+header {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.19;
+  color: rgba(255, 255, 255, 0.8);
+}
+.header-list {
+  display: flex;
+}
+.header-item + .header-item {
+  margin-left: 77px;
+}
 
 /* HERO */
-
+.hero {
+  padding-top: 0;
+}
+.hero-container {
+  display: flex;
+  /* justify-content: space-between; */
+}
 .hero-description {
   font-size: 16px;
   line-height: 1.25;
@@ -123,7 +166,11 @@ ul {
 
 .hero-description:last-of-type {
   max-width: 135px;
-  margin-bottom: 0;
+  margin-bottom: 110px;
+}
+.hero-wrapper {
+  /* padding-left: 104px; */
+  margin-left: 104px;
 }
 .hero-title {
   font-weight: 600;
@@ -134,6 +181,13 @@ ul {
   color: var(--title-color-text);
   margin-bottom: 60px;
   width: 485px;
+}
+/* .hero-button {
+
+} */
+.hero-image {
+  display: block;
+  margin-left: auto;
 }
 
 /* GARANTIES */
@@ -169,33 +223,7 @@ ul {
 .footer-link.footer-link--tel {
   color: var(--primary-color-text);
 }
-/* header */
-header {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.19;
-  color: rgba(255, 255, 255, 0.8);
-}
-.header-list {
-  display: flex;
-}
-.header-item + .header-item {
-  margin-left: 77px;
-}
 
-/* hero */
-.hero {
-  padding-top: 70px;
-}
-.hero-title {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 74px;
-  line-height: 1;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  color: var(--title-color-text);
-}
 /* design */
 .design-item:not(:last-child) {
   margin-bottom: 40px;

@@ -18,41 +18,51 @@
   <body>
     <!-- section header -->
     <header class="header">
-      <a class="header-link" href="" aria-label="Логотип Bose">
-        <img src="./img/bose-logo.svg" alt="Логотип Компании" />
-      </a>
-      <nav class="header-nav">
-        <ul class="header-list">
-          <li class="header-item">
-            <a href="">Характеристики</a>
-          </li>
-          <li class="header-item">
-            <a href="">История</a>
-          </li>
-          <li class="header-item">
-            <a href="">Отзывы</a>
-          </li>
-          <li class="header-item">
-            <a href="">Оплата и доставка</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="container header-container">
+        <a class="header-link" href="" aria-label="Логотип Bose">
+          <img src="./img/bose-logo.svg" alt="Логотип Компании" />
+        </a>
+
+        <nav class="header-nav">
+          <ul class="header-list">
+            <li class="header-item">
+              <a class="header-item-link" href="">Характеристики</a>
+            </li>
+            <li class="header-item">
+              <a class="header-item-link" href="">История</a>
+            </li>
+            <li class="header-item">
+              <a class="header-item-link" href="">Отзывы</a>
+            </li>
+            <li class="header-item">
+              <a class="header-item-link" href="">Оплата и доставка</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <!-- section hero -->
       <section class="hero section">
-        <p class="hero-description">
-          Наушники с шумоподавлением, которые способны на многое
-        </p>
-        <p class="hero-description">До 20 часов воспроизведения</p>
-        <h1 class="hero-title">Наушники Bose NC 700</h1>
-        <button class="btn" type="button">Заказать</button>
-        <img
-          src="./img/hero/img.png"
-          alt="Наушники Bose NC 700 "
-          width="700"
-          height="598"
-        />
+        <div class="container hero-container">
+          <div class="hero-content">
+            <p class="hero-description">
+              Наушники с шумоподавлением, которые способны на многое
+            </p>
+            <p class="hero-description">До 20 часов воспроизведения</p>
+            <div class="hero-wrapper">
+              <h1 class="hero-title">Наушники Bose NC 700</h1>
+              <button class="btn" type="button">Заказать</button>
+            </div>
+          </div>
+          <img
+            class="hero-image"
+            src="./img/hero/img.png"
+            alt="Наушники Bose NC 700 "
+            width="700"
+            height="598"
+          />
+        </div>
       </section>
       <!-- section design -->
       <section class="design section">
@@ -101,12 +111,12 @@
       <!-- section promo -->
       <section class="promo section">
         <h2 class="title">Роскошь тишины</h2>
-        <img
+        <!-- <img
           src="./img/promo/promo-bg.jpg"
           alt="Наушники Bose на лавочке"
           width="1440"
           height="524"
-        />
+        /> -->
         <ul>
           <li>
             <h3 class="subtitle">Максимальное наслаждение</h3>
@@ -342,7 +352,7 @@
         </article>
       </section>
       <!-- Фоновое изображение -->
-      <section class="background section">
+      <!-- <section class="background section">
         <img
           class="background-image"
           src="./img/ad/ad-image.jpg"
@@ -350,7 +360,7 @@
           width="1440"
           height="524"
         />
-      </section>
+      </section> -->
       <!-- section feedback -->
       <section class="feedback section">
         <h2 class="title">Обратная связь</h2>
