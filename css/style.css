@@ -225,12 +225,54 @@ header {
 }
 
 /* design */
+
+.design {
+  display: flex;
+}
+
+.design-wrapper .title {
+  width: 620px;
+}
+
+.design-image {
+  margin-right: 150px;
+}
+
 .design-item:not(:last-child) {
   margin-bottom: 40px;
 }
+
 /* faq */
 .faq .subtitle {
   margin: 0;
   padding-top: 4px;
   padding-bottom: 24px;
 }
+
+/* == EXMP ==*/
+/* .item-exmp {
+  width: 50px;
+  height: 50px;
+  background-color: tomato;
+  margin-left: 10px;
+}
+
+.exmp .container {
+  display: flex;
+   justify-content: space-between;
+  align-items: center;
+}
+
+.menu-exmp {
+  display: flex;
+  margin-left: 100px;
+}
+
+.contact {
+  display: flex;
+  margin-left: auto;
+}
+
+.item-contact {
+  margin-left: 10px;
+} */
