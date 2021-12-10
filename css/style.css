@@ -17,7 +17,6 @@
   --main-bg-cl: #191919;
 
   /* text colors */
-
   --primary-color-text: rgba(255, 255, 255, 0.8);
   --title-color-text: #e7e7e7;
   --second-color-text: rgba(255, 255, 255, 0.3);
@@ -33,12 +32,12 @@
 }
 /* Common styles */
 body {
-  background-color: var(--main-bg-cl);
   font-family: Gilroy, sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.45;
   color: var(--primary-color-text);
+  background-color: var(--main-bg-cl);
 }
 ul {
   list-style: none;
@@ -63,6 +62,14 @@ ul {
   padding-top: 85px;
   padding-bottom: 85px;
 }
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  outline: 1px solid red;
+}
 .title {
   font-weight: 600;
   font-size: 54px;
@@ -72,9 +79,14 @@ ul {
   color: var(--title-color-text);
   margin-bottom: 50px;
 }
+.subtitle {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.25;
+  color: var(--title-color-text);
+  margin-bottom: 20px;
+}
 .btn {
-  /* min-width: 290px;
-  min-height: 68px; */
   max-width: 300px;
   padding: 22px 95px;
   font-family: Gilroy, sans-serif;
@@ -104,29 +116,14 @@ ul {
   color: var(--hover-btn);
   background-color: transparent;
 }
-.subtitle {
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 1.25;
-  color: var(--title-color-text);
-  margin-bottom: 20px;
-}
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1320px;
-  padding-left: 20px;
-  padding-right: 20px;
-  outline: 1px solid red;
-}
 
+/* grid layout */
 .grid {
   display: flex;
   flex-wrap: wrap;
   margin-right: calc(-1 * var(--indent));
   margin-bottom: calc(-1 * var(--indent));
 }
-
 .grid-item {
   flex-basis: calc(100% / var(--item) + calc(-1 * var(--indent)));
   margin-right: var(--indent);
@@ -143,6 +140,11 @@ ul {
   justify-content: space-between;
   align-items: center;
 }
+.header-nav {
+  font-size: 16px;
+  line-height: 1.19;
+  color: rgba(255, 255, 255, 0.8);
+}
 .header-item-link {
   display: block;
   padding-top: 8px;
@@ -151,15 +153,9 @@ ul {
   line-height: 1.19;
   color: var(--primary-color-text);
 }
-/* header */
-header {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.19;
-  color: rgba(255, 255, 255, 0.8);
-}
 .header-list {
   display: flex;
+  align-items: center;
 }
 .header-item + .header-item {
   margin-left: 77px;
@@ -171,7 +167,6 @@ header {
 }
 .hero-container {
   display: flex;
-  /* justify-content: space-between; */
 }
 .hero-description {
   font-size: 16px;
@@ -180,13 +175,11 @@ header {
   max-width: 320px;
   margin-bottom: 36px;
 }
-
 .hero-description:last-of-type {
   max-width: 135px;
   margin-bottom: 110px;
 }
 .hero-wrapper {
-  /* padding-left: 104px; */
   margin-left: 104px;
 }
 .hero-title {
@@ -199,100 +192,39 @@ header {
   margin-bottom: 60px;
   width: 485px;
 }
-/* .hero-button {
-
-} */
 .hero-image {
   display: block;
   margin-left: auto;
 }
 
-/* GARANTIES */
-
-.quote-author {
-  font-size: 16px;
-  line-height: 0.7;
-  color: rgba(255, 255, 255, 0.4);
-}
-
-.overview-subtitle {
-  color: var(--accent-text-color);
-}
-
-.overview-numbers {
-  font-size: 28px;
-  line-height: 1.25;
-  color: var(--accent-text-color);
-  opacity: 0.2;
-}
-
-.overview-numbers.current {
-  opacity: 1;
-}
-
-/* FOOTER */
-.footer-link {
-  font-size: 16px;
-  line-height: 1.25;
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.footer-link.footer-link--tel {
-  color: var(--primary-color-text);
-}
-
-/* design */
-
+/* DESIGN */
 .design {
   display: flex;
   justify-content: space-between;
 }
-
 .design-wrapper .title {
   width: 620px;
 }
-
-.design-image {
-  /* margin-right: 150px; */
-}
-
 .design-item:not(:last-child) {
   margin-bottom: 40px;
 }
 
-/* faq */
-.faq .subtitle {
-  margin: 0;
-  padding-top: 4px;
-  padding-bottom: 24px;
-}
-
 /* BENEFITS */
-
 .benefits .container {
   width: 1128px;
 }
-
 .benefits-list {
   display: flex;
   justify-content: space-between;
 }
-
-.benefits-items-list {
-  /* list-style: disc; */
-}
-
 .benefits-item {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-  /* vertical-align: middle; */
 }
-
 .benefits-item:last-child {
   margin-bottom: 0;
 }
-
 .benefits-item::before {
   content: "  ";
   margin-right: 10px;
@@ -303,30 +235,40 @@ header {
   border-radius: 50%;
 }
 
-/* == EXMP ==*/
-.item-exmp {
-  /* width: 50px; */
-  height: 50px;
-  background-color: tomato;
-  /* margin-left: 10px; */
+/* GARANTIES */
+.quote-author {
+  font-size: 16px;
+  line-height: 0.7;
+  color: rgba(255, 255, 255, 0.4);
 }
 
-.exmp .container {
-  /* display: flex; */
-  /* justify-content: space-between;
-  align-items: center; */
+/* OVERVIEW */
+.overview-subtitle {
+  color: var(--accent-text-color);
+}
+.overview-numbers {
+  font-size: 28px;
+  line-height: 1.25;
+  color: var(--accent-text-color);
+  opacity: 0.2;
+}
+.overview-numbers.current {
+  opacity: 1;
 }
 
-.menu-exmp {
-  /* display: flex; */
-  /* margin-left: 100px; */
+/* FAQ */
+.faq .subtitle {
+  margin: 0;
+  padding-top: 4px;
+  padding-bottom: 24px;
 }
 
-/* .contact {
-  display: flex;
-  margin-left: auto;
+/* FOOTER */
+.footer-link {
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.3);
 }
-
-.item-contact {
-  margin-left: 10px;
-} */
+.footer-link.footer-link--tel {
+  color: var(--primary-color-text);
+}
