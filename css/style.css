@@ -210,29 +210,61 @@ ul {
 }
 
 /* BENEFITS */
+
 .benefits .container {
   width: 1128px;
 }
+
 .benefits-list {
   display: flex;
   justify-content: space-between;
 }
+
 .benefits-item {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 }
+
+.benefits-item::before {
+  content: "";
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: var(--primary-btn);
+
+  margin-right: 24px;
+}
+
 .benefits-item:last-child {
   margin-bottom: 0;
 }
-.benefits-item::before {
-  content: "  ";
-  margin-right: 10px;
-  display: block;
-  width: 13px;
-  height: 13px;
-  background-color: var(--accent-text-color);
-  border-radius: 50%;
+
+/*  PROMO */
+
+.promo {
+  background-image: url(../img/promo/promo-bg.jpg);
+  background-repeat: no-repeat;
+  /* background-position: top 200px left calc(100% / 2); */
+  background-position: top 200px left 50%;
+  background-size: 1440px 524px;
+}
+
+.promo .title {
+  margin-bottom: 624px;
+  margin-left: 660px;
+}
+
+.promo-list {
+  display: flex;
+  justify-content: center;
+}
+
+.promo-list-item:not(:last-child) {
+  margin-right: 40px;
+}
+.promo-list-item {
+  width: 510px;
 }
 
 /* GARANTIES */
