@@ -38,6 +38,7 @@ body {
   line-height: 1.45;
   color: var(--primary-color-text);
   background-color: var(--main-bg-cl);
+  overflow-x: hidden;
 }
 ul {
   list-style: none;
@@ -53,8 +54,10 @@ h4,
 h5,
 h6,
 p,
-ul {
+ul,
+blockquote {
   margin: 0;
+  padding: 0;
 }
 
 /* Utils */
@@ -298,6 +301,97 @@ ul {
 }
 
 /* GARANTIES */
+.garanties {
+  background-image: url(../img/warranty/warranty-img.jpg),
+    url(../img/warranty/warranty-icon.svg);
+  background-repeat: no-repeat;
+  background-position: top 85px left calc(50% - 450px),
+    bottom 85px right calc(50% - 600px);
+  background-position: left 0 top 85px, right 0 bottom 85px;
+  background-size: 590px 565px, 300px 111px;
+}
+.container-garanties {
+  padding-left: 630px;
+  padding-right: 240px;
+  padding-top: 25px;
+}
+.garanties-item {
+  padding-top: 37px;
+  /* 24+13 */
+  position: relative;
+}
+.garanties-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+.garanties-item::before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: var(--accent-text-color);
+}
+.garanties-subtitle {
+  margin-bottom: 16px;
+}
+
+/* History */
+/* Оформление через фоновое изображение */
+/* .brand-history {
+  background-image: url(../img/brand-history/img-1.jpg);
+  background-repeat: no-repeat;
+  background-position: top 85px left calc(50% + 400px);
+} */
+
+.brand-wrapper {
+  padding-left: 120px;
+}
+
+.brand-wrapper:first-child {
+  margin-bottom: 40px;
+  width: 520px;
+  position: relative;
+}
+.brand-history-text:not(:last-child) {
+  margin-bottom: 16px;
+}
+.brand-wrapper:last-child {
+  display: flex;
+  align-items: flex-end;
+}
+/* Оформление через контентное изображение */
+.brand-history-image {
+  position: absolute;
+  top: 0;
+  left: calc(100% + 150px);
+}
+.brand-wrapper-text {
+  margin-left: 260px;
+  max-width: 510px;
+}
+.brand-history-text.quote-pre-text {
+  margin-bottom: 90px;
+}
+.brand-history-subtitle {
+  padding-top: 75px;
+  position: relative;
+  max-width: 382px;
+  margin-bottom: 32px;
+}
+.brand-history-subtitle::before {
+  content: "";
+  display: block;
+  width: 34px;
+  height: 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../img/brand-history/decor-quotes.png);
+  background-repeat: no-repeat;
+}
 .quote-author {
   font-size: 16px;
   line-height: 0.7;
