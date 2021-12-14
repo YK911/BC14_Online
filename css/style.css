@@ -168,6 +168,30 @@ blockquote {
   margin-left: 77px;
 }
 
+@keyframes logoAnimation {
+  0% {
+    transform: translateY(-100px);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  80% {
+    transform: translateY(-100px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.header-link {
+  /* opacity: 0; */
+
+  animation: logoAnimation 5000ms ease-in;
+}
+
 /* HERO */
 .hero {
   padding-top: 0;
@@ -306,9 +330,11 @@ blockquote {
 
 /* GARANTIES */
 .garanties {
-  background-image: url(../img/warranty/warranty-img.jpg), url(../img/warranty/warranty-icon.svg);
+  background-image: url(../img/warranty/warranty-img.jpg),
+    url(../img/warranty/warranty-icon.svg);
   background-repeat: no-repeat;
-  background-position: top 85px left calc(50% - 450px), bottom 85px right calc(50% - 600px);
+  background-position: top 85px left calc(50% - 450px),
+    bottom 85px right calc(50% - 600px);
   background-position: left 0 top 85px, right 0 bottom 85px;
   background-size: 590px 565px, 300px 111px;
 }
