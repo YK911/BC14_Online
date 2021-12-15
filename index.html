@@ -225,20 +225,24 @@
       </section>
       <!-- section overview -->
       <section class="overview section">
-        
-        <div class=" overview-wrapper">
-          <video class="overview-video" src="https://www.youtube.com/watch?v=VqP11Ma_2Fk&ab_channel=Bose"
-            poster="./img/overview/poster-1.jpg" width="920" height="590"></video>
+        <div class="overview-wrapper">
+          <video
+            class="overview-video"
+            src="https://www.youtube.com/watch?v=VqP11Ma_2Fk&ab_channel=Bose"
+            poster="./img/overview/poster-1.jpg"
+            width="920"
+            height="590"
+          ></video>
           <div class="overview-content">
             <h2 class="title">Обзоры</h2>
             <h3 class="overview-subtitle subtitle">Bose Сorporation</h3>
             <p class="overview-text">
               Critically acclaimed for their powerful noise cancelling, astonishing sound, and
-              unrivaled voice pickup, Bose Noise Cancelling Headphones&nbsp;700 help turn any space into
-              the perfect place to listen to music, get work done, or just shut out the world for a
-              few moments and relax.
+              unrivaled voice pickup, Bose Noise Cancelling Headphones&nbsp;700 help turn any space
+              into the perfect place to listen to music, get work done, or just shut out the world
+              for a few moments and relax.
             </p>
-            
+
             <ul class="overview-numbers-list">
               <li class="overview-numbers current">01</li>
               <li class="overview-numbers">02</li>
@@ -246,18 +250,15 @@
               <li class="overview-numbers">04</li>
             </ul>
           </div>
-            
         </div>
       </section>
       <!-- section faq -->
       <section class="faq section">
         <div class="container faq-container">
-      
           <h2 class="title">FAQ</h2>
           <details class="faq-item">
             <summary class="subtitle">
               <span>Как выполнить сопряжение с мобильным устройством?</span>
-               
             </summary>
             <p class="faq-description">
               Во-первых, убедитесь, что ваши наушники включены одним нажатием верхней кнопки на
@@ -272,7 +273,6 @@
           <details class="faq-item">
             <summary class="subtitle">
               <span>Каков диапазон беспроводной связи у Bose NC 700?</span>
-               
             </summary>
             <p class="faq-description">
               Во-первых, убедитесь, что ваши наушники включены одним нажатием верхней кнопки на
@@ -287,7 +287,6 @@
           <details class="faq-item">
             <summary class="subtitle">
               <span>Каков диапазон беспроводной связи у Bose NC 700?</span>
-               
             </summary>
             <p class="faq-description">
               Во-первых, убедитесь, что ваши наушники включены одним нажатием верхней кнопки на
@@ -302,7 +301,6 @@
           <details class="faq-item">
             <summary class="subtitle">
               <span>Как сложить наушники Bose NC 700 для хранения?</span>
-               
             </summary>
             <p class="faq-description">
               Во-первых, убедитесь, что ваши наушники включены одним нажатием верхней кнопки на
@@ -317,7 +315,6 @@
           <details class="faq-item">
             <summary class="subtitle">
               <span>Работает ли гарантия на международном уровне?</span>
-               
             </summary>
             <p class="faq-description">
               Во-первых, убедитесь, что ваши наушники включены одним нажатием верхней кнопки на
@@ -356,25 +353,45 @@
       </section>
       <!-- section feedback -->
       <section class="feedback section">
-        <div class="container">
-          <h2 class="title">Обратная связь</h2>
-          <p class="feedback-text subtitle">Мы поможем подобрать вам подходящие наушники</p>
+        <div class="container feedback-container">
+          <div class="feedback-content">
+            <h2 class="title">Обратная связь</h2>
+
+            <p class="feedback-text subtitle">Мы поможем подобрать вам подходящие наушники</p>
+          </div>
           <form class="feedback-form">
             <label class="feedback-label">
-              <input class="feedback-input" type="text" name="name" placeholder="Ваше имя" />
+              <input class="feedback-input" type="text" name="name" placeholder=" " />
+              <span class="feedback-notification">Ваше имя</span>
             </label>
             <label class="feedback-label">
-              <input class="feedback-input" type="email" name="email" placeholder="Ваш e-mail" />
+              <input class="feedback-input" type="email" name="email" placeholder=" " />
+              <span class="feedback-notification">Ваш e-mail</span>
             </label>
             <label class="feedback-label">
               <textarea
-                class="feedback-input feedback-input--textarea"
+                class="feedback-input feedback-input-textarea"
                 name="message"
                 placeholder="Напишите нам сообщение"
               ></textarea>
             </label>
-            <label class="feedback-label">
-              <input class="feedback-accept" name="accept" type="checkbox" required />I agree to the
+            <label class="feedback-label label-checkbox" lang="en">
+              <input
+                class="feedback-accept visually-hidden"
+                name="accept"
+                type="checkbox"
+                required
+              />
+              <span class="feedback-box">
+                <svg width="26" height="22" viewBox="0 0 26 22" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2 13L9.19156 20.1916C9.61949 20.6195 10.3265 20.5722 10.6936 20.0911L24.5 2"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </span>
+              I agree to the&nbsp;
               <a class="feedback-link" href="" target="_blank" rel="noreferrer noopener"
                 >privacy policy
               </a>
