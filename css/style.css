@@ -39,6 +39,8 @@ body {
   color: var(--primary-color-text);
   background-color: var(--main-bg-cl);
   overflow-x: hidden;
+
+  counter-reset: section; /* Set a counter named 'section', and its initial value is 0. */
 }
 ul {
   list-style: none;
@@ -166,6 +168,32 @@ blockquote {
 }
 .header-item + .header-item {
   margin-left: 77px;
+}
+
+@keyframes logoAnimation {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateY(0) rotate(0);
+    opacity: 1;
+  }
+
+  /* 80% {
+    transform: translateY(-100px);
+  } */
+
+  100% {
+    transform: translateY(0) rotate(720deg);
+  }
+}
+
+.header-link {
+  /* opacity: 0; */
+
+  animation: logoAnimation 5000ms ease-in;
 }
 
 /* HERO */
@@ -306,10 +334,11 @@ blockquote {
 
 /* GARANTIES */
 .garanties {
-  background-image: url(../img/warranty/warranty-img.jpg), url(../img/warranty/warranty-icon.svg);
+  background-image: url(../img/warranty/warranty-img.jpg),
+    url(../img/warranty/warranty-icon.svg);
   background-repeat: no-repeat;
-  background-position: top 85px left calc(50% - 450px), bottom 85px right calc(50% - 600px);
-  background-position: left 0 top 85px, right 0 bottom 85px;
+  background-position: top 85px left calc(50% - 450px),
+    bottom 85px right calc(50% - 600px);
   background-size: 590px 565px, 300px 111px;
 }
 .container-garanties {
@@ -401,27 +430,95 @@ blockquote {
 }
 
 /* OVERVIEW */
+
+.overview-video {
+  margin-right: 120px;
+}
+.overview-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+}
+.overview-content {
+  width: 258px;
+}
 .overview-subtitle {
   color: var(--accent-text-color);
+}
+
+.overview-text {
+  margin-bottom: 70px;
+}
+
+.overview-numbers-list {
+  display: flex;
 }
 .overview-numbers {
   font-size: 28px;
   line-height: 1.25;
   color: var(--accent-text-color);
   opacity: 0.2;
+  margin-right: 12px;
+}
+.overview-numbers:last-child {
+  margin-right: 0;
+}
+.overview-numbers:not(:last-child)::after {
+  content: "-";
+  margin-left: 12px;
 }
 .overview-numbers.current {
   opacity: 1;
 }
 
 /* FAQ */
-.faq .subtitle {
-  margin: 0;
-  padding-top: 4px;
+.faq-container {
+  width: 1160px;
+}
+.faq-item {
   padding-bottom: 24px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+.faq-item:not(:last-child) {
+  margin-bottom: 84px;
 }
 
+.faq .subtitle {
+  margin: 0;
+
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.faq .subtitle::before {
+  counter-increment: section;
+  content: "0" counter(section);
+  margin-right: 32px;
+}
+
+.faq .subtitle::after {
+  content: "?";
+  margin-left: auto;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.faq-description {
+  margin-top: 16px;
+  padding: 0 62px;
+}
 /* FOOTER */
+.footer-list {
+  display: flex;
+  align-items: center;
+}
 .footer-link {
   font-size: 16px;
   line-height: 1.25;
