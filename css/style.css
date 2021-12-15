@@ -25,7 +25,7 @@
   --accent-text-color: #df3d3a;
   --hover-btn: #b5302d;
   --hover-btn-border: rgba(255, 255, 255, 0.8);
-
+  --radio-btn-cl: #101010;
   /* grid layout */
   --indent: 40px;
   --item: 3;
@@ -343,9 +343,11 @@ blockquote {
 
 /* GARANTIES */
 .garanties {
-  background-image: url(../img/warranty/warranty-img.jpg), url(../img/warranty/warranty-icon.svg);
+  background-image: url(../img/warranty/warranty-img.jpg),
+    url(../img/warranty/warranty-icon.svg);
   background-repeat: no-repeat;
-  background-position: top 85px left calc(50% - 450px), bottom 85px right calc(50% - 600px);
+  background-position: top 85px left calc(50% - 450px),
+    bottom 85px right calc(50% - 600px);
   background-size: 590px 565px, 300px 111px;
 }
 .container-garanties {
@@ -520,6 +522,75 @@ blockquote {
 .faq-description {
   margin-top: 16px;
   padding: 0 62px;
+}
+/* ORDER */
+.order-container {
+  display: flex;
+}
+.order-wrapper {
+  margin-right: 150px;
+}
+.order-form {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+.order-color {
+  margin-bottom: 50px;
+}
+.order-color label:not(:last-child) {
+  margin-right: 20px;
+}
+.order-color-radio {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--radio-btn-cl);
+  border: 2px solid var(--accent-text-color);
+}
+.order-radio:not(:checked) + .order-color-radio {
+  background-color: #dbdbdb;
+  border-color: transparent;
+}
+.order-characteristics {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.order-link {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.8);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+.order-link:first-child {
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+.order-link::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/order/arrow.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.order-price {
+  margin-bottom: 32px;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #df3d3a;
+}
+.order-image-white {
+  display: none;
 }
 /* SECTION FEEDBACK */
 .feedback-form {
