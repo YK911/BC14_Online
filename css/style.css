@@ -515,6 +515,10 @@ blockquote {
   padding: 0 62px;
 }
 /* FOOTER */
+.footer-list {
+  display: flex;
+  align-items: center;
+}
 .footer-link {
   font-size: 16px;
   line-height: 1.25;
