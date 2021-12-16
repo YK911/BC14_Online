@@ -1,0 +1,28 @@
+
+
+/*  PROMO */
+
+.promo {
+    background-image: url(../img/promo/promo-bg.jpg);
+    background-repeat: no-repeat;
+    /* background-position: top 200px left calc(100% / 2); */
+    background-position: top 200px left 50%;
+    background-size: 1440px 524px;
+  }
+
+  .promo .title {
+    margin-bottom: 624px;
+    margin-left: 660px;
+  }
+
+  .promo-list {
+    display: flex;
+    justify-content: center;
+  }
+
+  .promo-list-item:not(:last-child) {
+    margin-right: 40px;
+  }
+  .promo-list-item {
+    width: 510px;
+  }

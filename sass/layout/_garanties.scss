@@ -1,0 +1,35 @@
+
+/* GARANTIES */
+.garanties {
+    background-image: url(../img/warranty/warranty-img.jpg), url(../img/warranty/warranty-icon.svg);
+    background-repeat: no-repeat;
+    background-position: top 85px left calc(50% - 450px), bottom 85px right calc(50% - 600px);
+    background-size: 590px 565px, 300px 111px;
+  }
+  .container-garanties {
+    padding-left: 630px;
+    padding-right: 240px;
+    padding-top: 25px;
+  }
+  .garanties-item {
+    padding-top: 37px;
+    /* 24+13 */
+    position: relative;
+  }
+  .garanties-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  .garanties-item::before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: var(--accent-txt-cl);
+  }
+  .garanties-subtitle {
+    margin-bottom: 16px;
+  }

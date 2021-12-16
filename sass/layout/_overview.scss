@@ -1,0 +1,43 @@
+
+
+/* OVERVIEW */
+
+.overview-video {
+    margin-right: 120px;
+  }
+  .overview-wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+  }
+  .overview-content {
+    width: 258px;
+  }
+  .overview-subtitle {
+    color: var(--accent-txt-cl);
+  }
+
+  .overview-text {
+    margin-bottom: 70px;
+  }
+
+  .overview-numbers-list {
+    display: flex;
+  }
+  .overview-numbers {
+    font-size: 28px;
+    line-height: 1.25;
+    color: var(--accent-txt-cl);
+    opacity: 0.2;
+    margin-right: 12px;
+  }
+  .overview-numbers:last-child {
+    margin-right: 0;
+  }
+  .overview-numbers:not(:last-child)::after {
+    content: "-";
+    margin-left: 12px;
+  }
+  .overview-numbers.current {
+    opacity: 1;
+  }

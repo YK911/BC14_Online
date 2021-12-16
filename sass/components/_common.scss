@@ -1,0 +1,54 @@
+body {
+    font-family: Gilroy, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.45;
+    color: var(--primary-txt-cl);
+    background-color: var(--main-bg-cl);
+    overflow-x: hidden;
+
+    counter-reset: section; /* Set a counter named 'section', and its initial value is 0. */
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  blockquote {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Utils */
+  .section {
+    padding-top: 85px;
+    padding-bottom: 85px;
+  }
+
+  .title {
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--title-txt-cl);
+    margin-bottom: 50px;
+  }
+  .subtitle {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.25;
+    color: var(--title-txt-cl);
+    margin-bottom: 20px;
+  }
+

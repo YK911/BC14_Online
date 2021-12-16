@@ -1,0 +1,30 @@
+
+/* BENEFITS */
+.benefits .container {
+    width: 1128px;
+  }
+
+  .benefits-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .benefits-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .benefits-item::before {
+    content: "";
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: var(--primary-btn);
+
+    margin-right: 24px;
+  }
+
+  .benefits-item:last-child {
+    margin-bottom: 0;
+  }

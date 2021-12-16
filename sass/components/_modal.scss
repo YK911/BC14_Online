@@ -1,0 +1,48 @@
+/* MODAL FORM */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: rgba(255, 255, 255, 0.4);
+  transition: opacity 400ms ease-in-out, visibility 400ms ease-in-out;
+
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  height: 400px;
+  width: 300px;
+  background-color: var(--main-bg-cl);
+  border-radius: 10px;
+  transition: 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0);
+  }
+}
+
+.modal-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  padding: 0;
+  cursor: pointer;
+  border: 1px solid var(--hover-btn);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  vertical-align: middle;
+}

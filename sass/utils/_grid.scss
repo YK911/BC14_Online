@@ -1,0 +1,11 @@
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: calc(-1 * var(--indent));
+    margin-bottom: calc(-1 * var(--indent));
+  }
+  .grid-item {
+    flex-basis: calc(100% / var(--item) + calc(-1 * var(--indent)));
+    margin-right: var(--indent);
+    margin-bottom: var(--indent);
+  }

@@ -1,0 +1,29 @@
+
+/* FOOTER */
+.footer {
+    padding-top: 85px;
+    padding-bottom: 74px;
+  }
+  .footer-container {
+    display: flex;
+    align-items: center;
+  }
+  .footer-list {
+    display: flex;
+    align-items: center;
+  }
+  .footer-item {
+    margin-right: 50px;
+  }
+  .footer-item:last-child {
+    margin-right: 0;
+  }
+  .footer-link {
+    margin-left: auto;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.3);
+  }
+  .footer-link.footer-link--tel {
+    color: var(--primary-txt-cl);
+  }
