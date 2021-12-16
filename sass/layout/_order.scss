@@ -1,6 +1,6 @@
-
 /* ORDER */
-.order::after {
+.order {
+  &::after {
     content: "";
     margin-top: 170px;
     display: block;
@@ -13,24 +13,25 @@
     background-size: cover;
   }
 
-  .order-container {
+  &-container {
     display: flex;
   }
-  .order-wrapper {
+  &-wrapper {
     margin-right: 150px;
   }
-  .order-form {
+  &-form {
     width: 400px;
     display: flex;
     flex-direction: column;
   }
-  .order-color {
+  &-color {
     margin-bottom: 50px;
+    label:not(:last-child) {
+      margin-right: 20px;
+    }
   }
-  .order-color label:not(:last-child) {
-    margin-right: 20px;
-  }
-  .order-color-radio {
+
+  &-color-radio {
     display: inline-block;
     width: 70px;
     height: 70px;
@@ -39,21 +40,23 @@
     transition: border-color 250ms linear;
     cursor: pointer;
   }
-  .order-color-black {
+  &-color-black {
     background-color: var(--radio-btn-cl);
   }
-  .order-color-white {
+  &-color-white {
     background-color: #dbdbdb;
   }
-  .order-radio:not(:checked) + .order-color-radio {
-    border-color: transparent;
+  &-radio {
+    &:not(:checked) + .order-color-radio {
+      border-color: transparent;
+    }
   }
-  .order-characteristics {
+  &-characteristics {
     margin-bottom: 50px;
     display: flex;
     flex-direction: column;
   }
-  .order-link {
+  &-link {
     display: flex;
     justify-content: space-between;
     padding-bottom: 25px;
@@ -62,20 +65,21 @@
     line-height: 1.25;
     color: rgba(255, 255, 255, 0.8);
     border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    &:first-child {
+      border-top: 2px solid rgba(255, 255, 255, 0.1);
+    }
+    &::after {
+      content: "";
+      width: 20px;
+      height: 20px;
+      background-image: url(../img/order/arrow.svg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
   }
-  .order-link:first-child {
-    border-top: 2px solid rgba(255, 255, 255, 0.1);
-  }
-  .order-link::after {
-    content: "";
-    width: 20px;
-    height: 20px;
-    background-image: url(../img/order/arrow.svg);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  .order-price {
+
+  &-price {
     margin-bottom: 32px;
     font-weight: 600;
     font-size: 54px;
@@ -84,6 +88,7 @@
     text-transform: uppercase;
     color: #df3d3a;
   }
-  .order-image-white {
+  &-image-white {
     display: none;
   }
+}
