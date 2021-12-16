@@ -1,0 +1,32 @@
+
+/* FOOTER */
+.footer {
+    padding-top: 85px;
+    padding-bottom: 74px;
+    &-container {
+      display: flex;
+      align-items: center;
+    }
+    &-list {
+      display: flex;
+      align-items: center;
+    }
+    &-item {
+      margin-right: 50px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  
+    &-link {
+      margin-left: auto;
+      font-size: 16px;
+      line-height: 1.25;
+      color: rgba(255, 255, 255, 0.3);
+      &--tel {
+        color: var(--primary-txt-cl);
+      }
+    }
+    
+  }
+  

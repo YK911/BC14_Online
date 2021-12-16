@@ -1,0 +1,25 @@
+/* DESIGN */
+.design {
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+  }
+
+  &-image {
+    margin-right: 150px;
+  }
+
+  &-wrapper {
+    .title {
+      width: 620px;
+    }
+  }
+
+  &-item {
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+}

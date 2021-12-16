@@ -1,0 +1,30 @@
+
+/* FEATURES */
+
+.features {
+    min-height: 756px;
+    background-image: url(../img/features/feature-img.jpg);
+    background-repeat: no-repeat;
+    background-size: 700px 586px;
+    background-position: top 85px left calc(100% / 2 + 315px);
+  }
+
+  .features-container {
+    position: relative;
+  }
+
+  /* .features-container::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    content: "";
+    display: block;
+    width: 700px;
+    height: 586px;
+    background-image: url(../img/features/feature-img.jpg);
+  } */
+
+  .features-text {
+    width: 380px;
+  }

@@ -1,0 +1,34 @@
+.btn {
+    max-width: 300px;
+    padding: 22px 95px;
+    font-family: Gilroy, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--primary-btn-txt-cl);
+    background-color: var(--primary-btn);
+    border: none;
+    cursor: pointer;
+    transition: background-color 400ms ease-in-out;
+  }
+  .btn:hover,
+  .btn:focus {
+    background-color: var(--hover-btn);
+  }
+  .btn-accent {
+    color: var(--primary-btn-txt-cl);
+    background-color: transparent;
+    border: 1px solid var(--primary-btn);
+    transition-property: color, border;
+    transition-duration: 400ms;
+    transition-timing-function: ease-in-out;
+  }
+  .btn-accent:hover,
+  .btn-accent:focus {
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    color: var(--hover-btn);
+    background-color: transparent;
+  }

@@ -1,0 +1,41 @@
+/* HERO */
+.hero {
+  padding-top: 0;
+
+  &-container {
+    display: flex;
+  }
+
+  &-description {
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--primary-txt-cl);
+    max-width: 320px;
+    margin-bottom: 36px;
+
+    &:last-of-type {
+      max-width: 135px;
+      margin-bottom: 110px;
+    }
+  }
+
+  &-wrapper {
+    margin-left: 104px;
+  }
+
+  &-title {
+    font-weight: 600;
+    font-size: 74px;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--title-txt-cl);
+    margin-bottom: 60px;
+    width: 485px;
+  }
+
+  &-image {
+    display: block;
+    margin-left: auto;
+  }
+}

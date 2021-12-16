@@ -1,0 +1,47 @@
+/* OVERVIEW */
+.overview {
+  &-wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+  }
+  &-video {
+    margin-right: 120px;
+  }
+
+  &-content {
+    width: 258px;
+  }
+  &-subtitle {
+    color: var(--accent-txt-cl);
+  }
+
+  &-text {
+    margin-bottom: 70px;
+  }
+
+  &-numbers-list {
+    display: flex;
+  }
+
+  &-numbers {
+    font-size: 28px;
+    line-height: 1.25;
+    color: var(--accent-txt-cl);
+    opacity: 0.2;
+    margin-right: 12px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:not(:last-child)::after {
+        content: "-";
+        margin-left: 12px;
+      }
+      
+      &.current {
+        opacity: 1;
+      }
+  }
+}
