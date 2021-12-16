@@ -12,20 +12,24 @@
   font-display: swap;
   src: url(../fonts/Gilroy-Semibold.woff), url(../fonts/Gilroy-Semibold.woff2);
 }
+
 :root {
   /* background colors */
   --main-bg-cl: #191919;
 
   /* text colors */
-  --primary-color-text: rgba(255, 255, 255, 0.8);
-  --title-color-text: #e7e7e7;
-  --second-color-text: rgba(255, 255, 255, 0.3);
-  --primary-btn-color-text: rgba(255, 255, 255, 0.9);
+  --accent-txt-cl: #df3d3a;
+  --primary-txt-cl: rgba(255, 255, 255, 0.8);
+  --title-txt-cl: #e7e7e7;
+  --second-txt-cl: rgba(255, 255, 255, 0.3);
+
+  --primary-btn-txt-cl: rgba(255, 255, 255, 0.9);
   --primary-btn: #df3d3a;
-  --accent-text-color: #df3d3a;
+  --radio-btn-cl: #101010;
+
   --hover-btn: #b5302d;
   --hover-btn-border: rgba(255, 255, 255, 0.8);
-  --radio-btn-cl: #101010;
+
   /* grid layout */
   --indent: 40px;
   --item: 3;
@@ -36,7 +40,7 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 1.45;
-  color: var(--primary-color-text);
+  color: var(--primary-txt-cl);
   background-color: var(--main-bg-cl);
   overflow-x: hidden;
 
@@ -81,14 +85,14 @@ blockquote {
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  color: var(--title-color-text);
+  color: var(--title-txt-cl);
   margin-bottom: 50px;
 }
 .subtitle {
   font-weight: 600;
   font-size: 28px;
   line-height: 1.25;
-  color: var(--title-color-text);
+  color: var(--title-txt-cl);
   margin-bottom: 20px;
 }
 .btn {
@@ -101,7 +105,7 @@ blockquote {
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  color: var(--primary-btn-color-text);
+  color: var(--primary-btn-txt-cl);
   background-color: var(--primary-btn);
   border: none;
   cursor: pointer;
@@ -112,7 +116,7 @@ blockquote {
   background-color: var(--hover-btn);
 }
 .btn-accent {
-  color: var(--primary-btn-color-text);
+  color: var(--primary-btn-txt-cl);
   background-color: transparent;
   border: 1px solid var(--primary-btn);
   transition-property: color, border;
@@ -169,7 +173,7 @@ blockquote {
   padding-bottom: 8px;
   font-size: 16px;
   line-height: 1.19;
-  color: var(--primary-color-text);
+  color: var(--primary-txt-cl);
 }
 .header-list {
   display: flex;
@@ -215,7 +219,7 @@ blockquote {
 .hero-description {
   font-size: 16px;
   line-height: 1.25;
-  color: var(--primary-color-text);
+  color: var(--primary-txt-cl);
   max-width: 320px;
   margin-bottom: 36px;
 }
@@ -232,7 +236,7 @@ blockquote {
   line-height: 1;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  color: var(--title-color-text);
+  color: var(--title-txt-cl);
   margin-bottom: 60px;
   width: 485px;
 }
@@ -242,9 +246,13 @@ blockquote {
 }
 
 /* DESIGN */
-.design {
+.design-container {
   display: flex;
   justify-content: space-between;
+  width: 1440px;
+}
+.design-image {
+  margin-right: 150px;
 }
 .design-wrapper .title {
   width: 620px;
@@ -343,11 +351,9 @@ blockquote {
 
 /* GARANTIES */
 .garanties {
-  background-image: url(../img/warranty/warranty-img.jpg),
-    url(../img/warranty/warranty-icon.svg);
+  background-image: url(../img/warranty/warranty-img.jpg), url(../img/warranty/warranty-icon.svg);
   background-repeat: no-repeat;
-  background-position: top 85px left calc(50% - 450px),
-    bottom 85px right calc(50% - 600px);
+  background-position: top 85px left calc(50% - 450px), bottom 85px right calc(50% - 600px);
   background-size: 590px 565px, 300px 111px;
 }
 .container-garanties {
@@ -372,7 +378,7 @@ blockquote {
   width: 13px;
   height: 13px;
   border-radius: 50%;
-  background-color: var(--accent-text-color);
+  background-color: var(--accent-txt-cl);
 }
 .garanties-subtitle {
   margin-bottom: 16px;
@@ -452,7 +458,7 @@ blockquote {
   width: 258px;
 }
 .overview-subtitle {
-  color: var(--accent-text-color);
+  color: var(--accent-txt-cl);
 }
 
 .overview-text {
@@ -465,7 +471,7 @@ blockquote {
 .overview-numbers {
   font-size: 28px;
   line-height: 1.25;
-  color: var(--accent-text-color);
+  color: var(--accent-txt-cl);
   opacity: 0.2;
   margin-right: 12px;
 }
@@ -524,6 +530,19 @@ blockquote {
   padding: 0 62px;
 }
 /* ORDER */
+.order::after {
+  content: "";
+  margin-top: 170px;
+  display: block;
+  width: 100%;
+  height: 524px;
+
+  background-image: url(../img/order/order-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .order-container {
   display: flex;
 }
@@ -546,11 +565,17 @@ blockquote {
   width: 70px;
   height: 70px;
   border-radius: 50%;
+  border: 2px solid var(--accent-txt-cl);
+  transition: border-color 250ms linear;
+  cursor: pointer;
+}
+.order-color-black {
   background-color: var(--radio-btn-cl);
-  border: 2px solid var(--accent-text-color);
+}
+.order-color-white {
+  background-color: #dbdbdb;
 }
 .order-radio:not(:checked) + .order-color-radio {
-  background-color: #dbdbdb;
   border-color: transparent;
 }
 .order-characteristics {
@@ -594,6 +619,7 @@ blockquote {
 }
 /* SECTION FEEDBACK */
 .feedback-form {
+  padding-top: 20px;
   width: 510px;
 }
 .feedback-container {
@@ -626,6 +652,9 @@ blockquote {
 
   padding-bottom: 17px;
 }
+.feedback-input:focus {
+  border-bottom: 2px solid #ea4335;
+}
 .feedback-notification {
   position: absolute;
   top: 5px;
@@ -635,17 +664,9 @@ blockquote {
   color: rgba(255, 255, 255, 0.3);
   transition: transform 400ms linear;
 }
-.feedback-input:focus {
-  border-bottom: 2px solid #ea4335;
-}
-.feedback-input:focus + .feedback-notification {
-  transform: translateY(-20px);
-}
+.feedback-input:focus + .feedback-notification,
 .feedback-input:not(:placeholder-shown) + .feedback-notification {
-  transform: translateY(-20px);
-}
-.feedback-input-textarea:hover::placeholder {
-  color: red;
+  transform: translateY(-30px);
 }
 .feedback-input-textarea {
   height: 118px;
@@ -671,12 +692,6 @@ blockquote {
   border: 2px solid currentColor;
   margin-right: 29px;
 }
-.feedback-link {
-  font-size: 16px;
-  line-height: 1.62;
-  text-decoration: underline;
-  color: currentColor;
-}
 .feedback-box svg {
   position: absolute;
   top: -5px;
@@ -688,18 +703,40 @@ blockquote {
 .feedback-accept:checked + .feedback-box svg {
   stroke: #df3d3a;
 }
+.feedback-link {
+  font-size: 16px;
+  line-height: 1.62;
+  text-decoration: underline;
+  color: currentColor;
+}
+
 /* FOOTER */
+.footer {
+  padding-top: 85px;
+  padding-bottom: 74px;
+}
+.footer-container {
+  display: flex;
+  align-items: center;
+}
 .footer-list {
   display: flex;
   align-items: center;
 }
+.footer-item {
+  margin-right: 50px;
+}
+.footer-item:last-child {
+  margin-right: 0;
+}
 .footer-link {
+  margin-left: auto;
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.3);
 }
 .footer-link.footer-link--tel {
-  color: var(--primary-color-text);
+  color: var(--primary-txt-cl);
 }
 /* MODAL FORM */
 .backdrop {
