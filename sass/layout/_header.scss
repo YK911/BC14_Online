@@ -3,29 +3,29 @@
   padding-top: 64px;
   padding-bottom: 70px;
 
-  &-container {
+  &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  &-link {
+  &__link {
     /* opacity: 0; */
     animation: logoAnimation 5000ms ease-in;
   }
 
-  &-nav {
+  &__nav {
     font-size: 16px;
     line-height: 1.19;
     color: rgba(255, 255, 255, 0.8);
   }
 
-  &-list {
+  &__list {
     display: flex;
     align-items: center;
   }
 
-  &-item {
+  &__item {
     margin-right: 77px;
 
     &:last-child {
@@ -33,7 +33,7 @@
     }
   }
 
-  &-item-link {
+  &__item-link {
     display: block;
     padding-top: 8px;
     padding-bottom: 8px;
