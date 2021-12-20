@@ -1,15 +1,15 @@
 /* BENEFITS */
 .benefits {
-  .container {
+  &__container {
     width: 1128px;
   }
 
-  &-list {
+  &__list {
     display: flex;
     justify-content: space-between;
   }
 
-  &-item {
+  &__inner-item {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
